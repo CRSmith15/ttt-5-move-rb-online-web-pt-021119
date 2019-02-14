@@ -13,6 +13,6 @@ def input_to_index(x)
 end
 
 def move(board,space,letter = "X")
-  board.each_with_index.collect {|x,i| i == space ? puts "#{letter}" : puts x}
+  board.each_with_index.collect {|x,i| i == space ? puts "#{letter}"}
 
 end
