@@ -13,5 +13,6 @@ def input_to_index(x)
 end
 
 def move(board,space,letter = "X")
+  board.each_with_index.map! {|x,i| i == "#{space}" ? "#{letter}" : x}
 
 end
